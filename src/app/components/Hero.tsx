@@ -1,15 +1,19 @@
-const title = 'INCREIBLE TIENDA';
+const title = 'Prestación de Servicios';
+const subTitle = 'Ingeniería Eléctrica';
 const description = 'description';
-const image = 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png';
+const image = '/assets/icono_LAP_Entrelazado.png';
 
 export const Hero = async () => {
     return (
-        <section className="bg-white dark:bg-gray-900">
-            <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <section className="pt-14">
+            <div className="grid max-w-screen-xl px-4 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-7">
-                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    <h1 className="max-w-2xl mb-2 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-3xl text-[#b4b4b4]"> {/* Azul oscuro */}
                         {title}
                     </h1>
+                    <h2 className="max-w-2xl ml-14 mb-4 text-6xl font-semibold tracking-tight leading-none text-red-500"> {/* Naranja/Rojo */}
+                        {subTitle}
+                    </h2>
                     <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                         {description}
                     </p>
@@ -29,8 +33,8 @@ export const Hero = async () => {
                         ></svg>
                     </a>
                 </div>
-                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                    <img src={image} alt="mockup" />
+                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex lg:items-center lg:justify-center">
+                    <img src={image} className="w-7/12 h-10/12" alt="mockup" />
                 </div>
             </div>
         </section>
